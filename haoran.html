@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPD</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            /* 限制内容宽度 */
+            width: 100%;
+        }
+
+        .side {
+            width: 20%;
+            background-color: #e0f7fa;
+            /* 侧边栏颜色 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            /* 默认隐藏侧边栏 */
+        }
+
+        header {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        #dd {
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #005b5c;
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        section {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #004d40;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .skills,
+        .projects {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li,
+        .projects li {
+            margin: 8px 0;
+            padding: 10px;
+            background: #b2dfdb;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #pp {
+            margin: 8px 0;
+            padding: 10px;
+            background: #b2dfdb;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            #dd {
+                width: 100%;
+            }
+
+            .side {
+                display: none;
+                /* 小屏幕下隐藏侧边栏 */
+            }
+        }
+        .button {
+            display: inline-block; /* 使链接显示为块元素 */
+            padding: 10px 20px; /* 内边距 */
+            font-size: 16px; /* 字体大小 */
+            color: white; /* 字体颜色 */
+            background-color: #00796b; /* 背景颜色 */
+            border: none; /* 去掉边框 */
+            border-radius: 5px; /* 圆角 */
+            text-decoration: none; /* 去掉下划线 */
+            transition: background-color 0.3s; /* 背景色变化的过渡效果 */
+         }
+
+        .button:hover {
+            background-color: #005b5c; /* 悬停时改变背景颜色 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="side"></div> <!-- 左侧边栏 -->
+    <div class="container">
+        <header>
+            <img src="my.jpg" alt="picture">
+            <div id="dd">
+                <h1>Haoran Wang</h1>
+                <p>I am a passionate person, a good team player, good communicator, patient and creative.</p>
+                <p>Mail Address:whrdemon@hotmail.com</p>
+                <p>Phone number:7436542934</p>
+            </div>
+        </header>
+        <section>
+            <h2>Educational experience</h2>
+            <ul class="skills">
+                <li>Undergraduate: Computer Science, Southwest Jiaotong University</li>
+                <li>Postgraduate: Robotics, University of Manchester</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Research Interests</h2>
+            <p id="pp">My research interests focus on artificial intelligence and robotics, especially how to use Python
+                for
+                data analysis and model training. At the same time, I am also passionate about embedded system
+                development and like to use C/C++ for efficient programming. In addition, I have a strong interest in
+                web development and focus on improving the user experience and the aesthetics of the interface.</p>
+        </section>
+
+        <section>
+            <h2>Description of Projects</h2>
+            <ul class="projects">
+                <li>
+                    <strong>Multi-Scale Retail Demand Foresting by Deep Learning &nbsp;&nbsp; &nbsp;&nbsp;Model engineer
+                        &nbsp;&nbsp;&nbsp;&nbsp;2023.12-2024.6</strong>
+                    <p id="pp">In the modern retail environment, accurately forecasting demand is the key to increasing
+                        sales
+                        and optimizing inventory management. This project aims to build a multi-scale retail demand
+                        forecasting model using deep learning technology. The goal of the project is to develop a deep
+                        learning model that can accurately predict product demand on different time scales (e.g., day,
+                        week, month) based on historical sales data, market trends, and seasonal factors.</p>
+                    <br><a href="https://github.com/whrdemon/finalproject" class="button">view project</a>
+                </li>
+                <li>
+                    <strong>Stadium Management System &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;Project Leader&nbsp;&nbsp; &nbsp;&nbsp;
+                        2022.10 to 2023.1</strong>
+                    <p id="pp">This project aims to develop a comprehensive stadium management system to improve the
+                        operational efficiency and user experience of the stadium. The system will provide stadium
+                        managers and users with a range of functions to facilitate their daily management and use. The
+                        goal of the project is to build a user-friendly management platform that supports functions such
+                        as booking, membership management, facility management and financial records of the stadium.</p>
+                    <br><a href="https://github.com/whrdemon/cwk2" class="button">view project</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <h2>Contact me</h2>
+            <p>
+                <a href="https://github.com/whrdemon">GitHub</a> |
+                <a href="https://www.linkedin.com/in/haoran-wang-60b4ab334/">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+    <div class="side"></div> <!-- 右侧边栏 -->
+
+</body>
+
+</html>
