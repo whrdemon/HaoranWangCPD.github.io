@@ -210,6 +210,16 @@
             background-color: #005b5c;
         }
 
+        .image-link {
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-link:hover .project-image {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
@@ -325,6 +335,18 @@
                     <p id="pp">This project develops a comprehensive stadium management system to improve operational efficiency, providing users with functions like booking, membership management, and financial records.</p>
                     <div style="text-align: center;">   
                         <a href="https://github.com/whrdemon/cwk2" class="button">View Project</a>
+                    </div>
+                </li>
+                <li>
+                    <div style="text-align: center;">
+                        <strong>LeoRover</strong><br>
+                        <em>Robotics System Design Project</em>
+                    </div>
+                    <p id="pp">We're going to make a little car called LeoRover, and our ultimate goal is to make it explore on its own and collect different blocks into different bins.</p>
+                    <div style="text-align: center;">   
+                        <a href="https://github.com/whrdemon/LeoRover-Robot" target="_blank" class="image-link">
+                            <img src="robot.jpg" alt="LeoRover picture" class="project-image">
+                        </a>
                     </div>
                 </li>
             </ul>
